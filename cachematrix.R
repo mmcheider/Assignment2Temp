@@ -53,7 +53,7 @@ cacheSolve <- function(x, ...) {
             return(m)
         }
         # if the inverse is NULL, then retrieve the matrix, compute the inverse,
-        # store it in parent environment & return it to caller.
+        # store it in parent environment & return it.
         data <- x$get()
         m <- solve(data)
         x$setinversematrix(m)
